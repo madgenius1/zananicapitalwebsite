@@ -1,20 +1,21 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Raleway } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+const raleway = Raleway({ subsets: ["latin"] });
+const siteName = "Zanari Capital";
+const baseUrl = "https://zanaricapital.com";
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
-  title: "Zanari Capital",
-  description: "Investment and Stock Trading Platform",
+  title: "Zanari Capital | Invest in Kenyan Stocks",
+  description: "Invest and Trade Stock in Kenya and the Diaspora",
+  keywords: [
+    "Invest in Kenyan Stocks",
+    "Investment Mobile App ",
+    "Stock Trading Platform",
+  ],
+
 };
 
 export default function RootLayout({
@@ -23,11 +24,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+     <html lang="en">
+      <head>
+        <link rel="icon" href="/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+      </head>
+      <body className={raleway.className}>
+        {/* <Navbar /> */}
         {children}
+        {/* <Footer /> */}
       </body>
     </html>
   );
