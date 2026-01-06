@@ -20,19 +20,27 @@ export default function Navbar() {
         <nav className=" top-0 z-50 dark:bg-gray-900 bg-gray-50">
             <div className="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-8" aria-label="Global">
                 <div className="flex justify-start px-4">
-                    <Link href="/">
+                    <Link href="/" className="flex justify-between flex-row items-center space-x-2">
                         <Image
-                            src="/zanarilogo.webp"
+                            src="/logo.webp"
                             alt="Zanari Header logo"
-                            width={100}
-                            height={60}
+                            width={36}
+                            height={36}
                         />
+                        <div className="hidden lg:flex flex-col leading-relaxed">
+                            <h1 className="uppercase font-bold dark:text-gray-50 text-gray-950 text-base">
+                                Zanari
+                            </h1>
+                            <h1 className="uppercase font-bold dark:text-gray-50 text-gray-950 text-base">
+                                Capital
+                            </h1>
+                        </div>
                     </Link>
                 </div>
                 <div className="hidden lg:flex lg:justify-center space-x-6">
                     <Link href="/features" className="text-gray-950 dark:text-gray-50 font-semibold">Features</Link>
-                    <Link href="/eatures" className="text-gray-950 dark:text-gray-50 font-semibold">Booking</Link>
                     <Link href="/about" className="text-gray-950 dark:text-gray-50 font-semibold">About</Link>
+                    <Link href="/waitlist" className="text-gray-950 dark:text-gray-50 font-semibold">Waitlist</Link>
                 </div>
                 <div className="md:hidden ">
                     <button
@@ -43,7 +51,7 @@ export default function Navbar() {
                         {isMobileMenuOpen ? (
                             <HiOutlineX size={30} className="dark:text-gray-100 text-gray-800" />
                         ) : (
-                            <HiOutlineMenuAlt4  size={30} className="dark:text-gray-100 text-gray-800" />
+                            <HiOutlineMenuAlt4 size={30} className="dark:text-gray-100 text-gray-800" />
                         )}
                     </button>
                 </div>
@@ -55,6 +63,21 @@ export default function Navbar() {
                 hover:bg-gray-50 transition duration-300 
                 shadow-xl 
                 transform hover:scale-[1.03]">Join Waitlist</Link>
+                </div>
+                <div
+                    className={`absolute left-0 w-full transition-all duration-400 ease-in-out md:hidden bg-neutral-500 backdrop-blur supports-backdrop-filter:bg-background/80 shadow-lg ${isMobileMenuOpen
+                        ? 'top-full opacity-100 visible'
+                        : '-top-96 opacity-0 invisible'
+                        }`}
+                >
+                    <ul className="flex flex-col p-6 space-y-4 list-none">
+                        <li><Link href="/features" className="block px-4 py-2 font-semibold hover:bg-gray-200" onClick={toggleMobileMenu}>Features</Link></li>
+                        <li><Link href="/about" className="block px-4 py-2 font-semibold hover:bg-gray-200" onClick={toggleMobileMenu}>About Us</Link></li>
+                        <li><Link href="/waitlist" className="block px-4 py-2 font-semibold hover:bg-gray-200" onClick={toggleMobileMenu}>Waitlist</Link></li>
+                        <li><Link href="/contact" className="block px-4 py-2 font-semibold hover:bg-gray-200" onClick={toggleMobileMenu}>Contact Us</Link></li>
+                        <li><Link href="/privacy" className="block px-4 py-2 font-semibold hover:bg-gray-200" onClick={toggleMobileMenu}>Privacy Policy</Link></li>
+                        <li><Link href="/terms" className="block px-4 py-2 font-semibold hover:bg-gray-200" onClick={toggleMobileMenu}>Terms of Use</Link></li>
+                    </ul>
                 </div>
             </div>
         </nav>
