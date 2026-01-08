@@ -11,7 +11,7 @@ export default function Navbar() {
 
     return (
         // Added 'sticky' and 'relative'
-        <nav className="top-0 z-50 w-full relative border-b border-gray-200 dark:border-gray-800 dark:bg-gray-900 bg-gray-50">
+        <nav className="top-0 z-50 w-full relative  dark:bg-gray-950 bg-white">
             <div className="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-8" aria-label="Global">
 
                 {/* Logo Section */}
@@ -25,10 +25,10 @@ export default function Navbar() {
                             className="rounded-sm"
                         />
                         <div className="hidden sm:flex flex-col leading-none">
-                            <span className="uppercase font-bold dark:text-gray-50 text-gray-950 text-sm tracking-tighter">
+                            <span className="uppercase font-bold dark:text-gray-50 text-gray-950 text-sm tracking-wider">
                                 Zanari
                             </span>
-                            <span className="uppercase font-bold dark:text-gray-50 text-gray-950 text-sm tracking-tighter">
+                            <span className="uppercase font-bold dark:text-gray-50 text-gray-950 text-sm tracking-wider">
                                 Capital
                             </span>
                         </div>
@@ -38,15 +38,15 @@ export default function Navbar() {
                 {/* Desktop Navigation - Synced to lg breakpoint */}
                 <div className="hidden lg:flex lg:justify-center space-x-8">
                     <Link href="/features" className="text-sm font-semibold text-gray-900 dark:text-gray-100 hover:text-gray-900 dark:hover:text-white transition-colors">Features</Link>
-                    <Link href="/learn" className="text-sm font-semibold text-gray-600 dark:text-gray-100 hover:text-gray-900 dark:hover:text-white transition-colors">Learn</Link>
-                    <Link href="/about" className="text-sm font-semibold text-gray-600 dark:text-gray-100 hover:text-gray-900 dark:hover:text-white transition-colors">About</Link>
+                    <Link href="/learn" className="text-sm font-semibold text-gray-900 dark:text-gray-100 hover:text-gray-900 dark:hover:text-white transition-colors">Learn</Link>
+                    <Link href="/about" className="text-sm font-semibold text-gray-900 dark:text-gray-100 hover:text-gray-900 dark:hover:text-white transition-colors">About</Link>
                     {/* <Link href="/waitlist" className="text-sm font-semibold text-gray-600 dark:text-gray-100 hover:text-gray-900 dark:hover:text-white transition-colors">Waitlist</Link> */}
                 </div>
 
                 {/* CTA Button & Mobile Toggle */}
                 <div className="flex items-center space-x-4">
-                    <Link href="/waitlist" className="hidden md:inline-flex px-5 py-2.5 text-sm font-bold bg-gray-950 dark:bg-gray-50 text-white dark:text-gray-950 rounded-full hover:opacity-90 transition shadow-md">
-                        Join Waitlist
+                    <Link href="/beta" className="hidden md:inline-flex px-5 py-2.5 text-sm font-bold bg-gray-950 dark:bg-gray-50 text-white dark:text-gray-950 rounded-lg hover:opacity-90 transition shadow-md">
+                        Join Beta
                     </Link>
 
                     {/* Mobile Menu Button - Synced to lg:hidden */}
@@ -67,11 +67,11 @@ export default function Navbar() {
 
                 {/* Mobile Dropdown Menu */}
                 <div
-                    className={`absolute left-0 top-full w-full transition-all duration-300 ease-in-out lg:hidden bg-white dark:bg-gray-900 border-b border-gray-200 dark:border-gray-800 shadow-xl overflow-hidden ${isMobileMenuOpen ? 'max-h-125 opacity-100' : 'max-h-0 opacity-0'
+                    className={`absolute left-0 top-full w-full transition-all duration-300 ease-in-out lg:hidden bg-white dark:bg-gray-950 border-b border-gray-200 dark:border-gray-800 shadow-xl overflow-hidden ${isMobileMenuOpen ? 'max-h-125 opacity-100' : 'max-h-0 opacity-0'
                         }`}
                 >
                     <ul className="flex flex-col p-6 space-y-2">
-                        {['Features', 'About Us', 'Waitlist', 'Contact Us', 'Privacy Policy'].map((item) => (
+                        {['Features', 'About Us', 'Learn', 'Beta', 'Contact Us', 'Privacy Policy'].map((item) => (
                             <li key={item}>
                                 <Link
                                     href={`/${item.toLowerCase().replace(' ', '')}`}
