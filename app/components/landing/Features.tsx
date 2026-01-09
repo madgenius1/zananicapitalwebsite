@@ -70,20 +70,21 @@ const PRODUCTS: Product[] = [
 
 export default function InvestmentBento() {
     return (
-        <section className="py-16 lg:py-24 bg-gray-50 dark:bg-neutral-950">
+        <section className="py-16 lg:py-24 bg-white dark:bg-gray-950">
             <div className="max-w-7xl mx-auto px-4 sm:px-6">
                 {/* Header */}
                 <div className="mb-12 flex flex-col md:flex-row md:items-end justify-between gap-6">
-                    <div className="max-w-2xl">
-                        <h2 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white tracking-tight">
-                            One App <br /> Every Kenyan Asset <span className="text-gray-400">in Kenya.</span>
+                    <div className="max-w-3xl space-y-2">
+                        <h2 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white">
+                            One App <br /> <span className="text-gray-400"> Every Kenyan Financial Asset. </span>
                         </h2>
                         <p className="mt-4 text-gray-600 dark:text-gray-400 text-lg md:text-xl">
-                            Stocks, bonds, and intelligent portfolios built for long-term wealth.
+                            Invest in the Nairobi Securities Exchange, Government Bonds, and intelligent ETFs
+                            through a world-class platform.
                         </p>
                     </div>
                 </div>
-                <div className="mb-12 sm:mb-16 text-center md:text-left">
+                {/* <div className="mb-12 sm:mb-16 text-center md:text-left">
                     <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-gray-900 dark:text-white mb-4 sm:mb-6">
                         One App. <br />
                         <span className="bg-clip-text text-transparent bg-linear-to-r from-blue-600 to-emerald-500">
@@ -94,15 +95,15 @@ export default function InvestmentBento() {
                         Invest in the Nairobi Securities Exchange, Government Bonds, and intelligent ETFs
                         through a world-class platform.
                     </p>
-                </div>
+                </div> */}
 
                 {/* Bento Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-4 md:gap-6 auto-rows-[300px] md:auto-rows-[250px]">
                     {PRODUCTS.map((product) => (
                         <Link
                             key={product.id}
-                            href={`/products/${product.id}`}
-                            className={`group relative overflow-hidden rounded-4xl border border-gray-200 dark:border-neutral-800 transition-all duration-500 hover:shadow-2xl flex flex-col ${product.gridClasses}`}
+                            href={`/${product.id}`}
+                            className={`group relative overflow-hidden rounded-2xl border border-gray-200 dark:border-neutral-800 transition-all duration-500 hover:shadow-2xl flex flex-col ${product.gridClasses}`}
                         >
                             {/* Background Image with Overlay */}
                             <div className="absolute inset-0 z-0">
@@ -123,13 +124,12 @@ export default function InvestmentBento() {
                                     <div className="p-3 rounded-2xl bg-white/10 backdrop-blur-xl border border-white/20 text-white">
                                         <product.icon className="w-6 h-6" />
                                     </div>
-                                    <div className="px-3 py-1 rounded-full bg-white/10 backdrop-blur-md border border-white/10">
+                                    <div className="px-3 py-2 flex items-center justify-center rounded-full bg-white/10 backdrop-blur-md border shadow-md border-white/10">
                                         <span className="text-[10px] uppercase tracking-[0.2em] font-bold text-white/90">
                                             {product.category}
                                         </span>
                                     </div>
                                 </div>
-
                                 <div className="space-y-4">
                                     <div>
                                         <h3 className="text-2xl md:text-3xl font-bold text-white leading-tight">
@@ -141,9 +141,8 @@ export default function InvestmentBento() {
                                     </div>
 
                                     <div className="pt-4 border-t border-white/10 flex items-center justify-between">
-                                        <div className="flex flex-col">
-                                            <span className="text-[10px] uppercase text-gray-400 font-medium">Performance</span>
-                                            <span className="text-sm font-bold text-emerald-400">{product.metric}</span>
+                                        <div className="">
+                                            <span className="text-sm font-bold text-green-400">{product.metric}</span>
                                         </div>
                                         <div className="flex items-center gap-2 text-sm font-bold text-white group-hover:underline">
                                             {product.cta}
