@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 export default function Hero() {
     return (
-        <section className="bg-white dark:bg-gray-950 min-h-screen flex items-center justify-center px-6 py-12 lg:p-8 transition-colors duration-300">
+        <section className="bg-white dark:bg-gray-950 min-h-screen flex items-center justify-center px-6 py-8 lg:p-8 transition-colors duration-300">
             <div className="max-w-4xl mx-auto text-center flex flex-col items-center">
 
                 {/* Small Top Badge */}
