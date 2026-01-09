@@ -1,5 +1,7 @@
 import Image from "next/image";
-import { HiShieldCheck, HiArrowUpRight, HiMiniArrowTrendingUp } from "react-icons/hi2";
+import Link from "next/link";
+
+import { HiAcademicCap, HiShieldCheck, HiArrowUpRight, HiMiniArrowTrendingUp } from "react-icons/hi2";
 import { HiChartBar, HiCash } from "react-icons/hi";
 
 interface Product {
@@ -84,7 +86,7 @@ export default function InvestmentBento() {
                 <div className="mb-12 sm:mb-16 text-center md:text-left">
                     <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-gray-900 dark:text-white mb-4 sm:mb-6">
                         One App. <br />
-                        <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-emerald-500">
+                        <span className="bg-clip-text text-transparent bg-linear-to-r from-blue-600 to-emerald-500">
                             Every Kenyan Asset.
                         </span>
                     </h2>
@@ -97,10 +99,10 @@ export default function InvestmentBento() {
                 {/* Bento Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-4 md:gap-6 auto-rows-[300px] md:auto-rows-[250px]">
                     {PRODUCTS.map((product) => (
-                        <a
+                        <Link
                             key={product.id}
                             href={`/products/${product.id}`}
-                            className={`group relative overflow-hidden rounded-[2rem] border border-gray-200 dark:border-neutral-800 transition-all duration-500 hover:shadow-2xl flex flex-col ${product.gridClasses}`}
+                            className={`group relative overflow-hidden rounded-4xl border border-gray-200 dark:border-neutral-800 transition-all duration-500 hover:shadow-2xl flex flex-col ${product.gridClasses}`}
                         >
                             {/* Background Image with Overlay */}
                             <div className="absolute inset-0 z-0">
@@ -111,7 +113,7 @@ export default function InvestmentBento() {
                                     className="object-cover transition-transform duration-700 group-hover:scale-105"
                                 />
                                 {/* Multi-stage gradient for better text legibility */}
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent z-10" />
+                                <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/40 to-transparent z-10" />
                                 <div className={`absolute inset-0 transition-colors duration-500 z-10 ${product.accent}`} />
                             </div>
 
@@ -150,7 +152,7 @@ export default function InvestmentBento() {
                                     </div>
                                 </div>
                             </div>
-                        </a>
+                        </Link>
                     ))}
                 </div>
             </div>
