@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-import { HiAcademicCap, HiShieldCheck, HiArrowUpRight, HiMiniArrowTrendingUp } from "react-icons/hi2";
+import { HiArrowUpRight, HiMiniArrowTrendingUp } from "react-icons/hi2";
 import { HiChartBar, HiCash } from "react-icons/hi";
 
 interface Product {
