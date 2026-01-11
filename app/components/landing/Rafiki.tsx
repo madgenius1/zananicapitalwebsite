@@ -10,7 +10,7 @@ export default function Rafiki() {
                 {/* Header */}
                 <div className="max-w-4xl mb-12 md:mb-14 space-y-4 ">
                     <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight text-gray-100 dark:text-gray-950 mb-8">
-                        Hi, I&apos;m <span className="text-[#0066FF]">Rafiki</span>
+                        Jambo, I&apos;m <span className="text-[#0066FF]">Rafiki</span>
                         <br />
                         <span className="font-semibold">Your AI Robo-Advisor</span>
                     </h2>
@@ -27,6 +27,7 @@ export default function Rafiki() {
                             options={{
                                 strings: [
                                     'Understand NSE stocks and bonds.',
+                                    'Guide you through the fundamentals.',
                                     'Track and analyze your portfolio.',
                                     'Diversify investment and risk.',
                                     'Invest smarter, not harder.',

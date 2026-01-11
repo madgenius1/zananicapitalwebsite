@@ -1,3 +1,4 @@
+import { HiGlobeAlt } from "react-icons/hi";
 import { HiBolt, HiKey, HiShieldCheck } from "react-icons/hi2";
 
 const FEATURES = [
@@ -7,6 +8,13 @@ const FEATURES = [
             "Open your digital trading accounts faster through our fully integrated onboarding flow.",
         icon: HiBolt,
         accent: "text-blue-600 bg-blue-50 dark:bg-blue-950/40",
+    },
+    {
+        title: "Diaspora Ready",
+        description:
+            "Invest from anywhere. International funding, local investments.",
+        icon: HiGlobeAlt,
+        accent: "text-gray-600 bg-gray-100 dark:bg-gray-950/40",
     },
     {
         title: "Direct Asset Ownership",
@@ -39,11 +47,11 @@ export default function Solution() {
                 </div>
 
                 {/* Features Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 lg:gap-8">
                     {FEATURES.map((feature, idx) => (
                         <div
                             key={idx}
-                            className="group relative rounded-3xl border border-gray-200/60 dark:border-white/10 bg-white dark:bg-gray-900 p-8 shadow-sm hover:shadow-xl transition-all duration-500"
+                            className="group relative rounded-3xl border border-gray-200/60 dark:border-white/10 bg-gray-50 dark:bg-gray-900 p-8 shadow-sm hover:shadow-xl transition-all duration-500"
                         >
                             {/* Icon */}
                             <div

@@ -968,6 +968,10 @@
     background-color: var(--color-gray-50);
   }
 
+  .bg-gray-100 {
+    background-color: var(--color-gray-100);
+  }
+
   .bg-gray-700 {
     background-color: var(--color-gray-700);
   }
@@ -1972,6 +1976,12 @@
   }
 
   @media (min-width: 64rem) {
+    .lg\:grid-cols-4 {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+
+  @media (min-width: 64rem) {
     .lg\:grid-cols-12 {
       grid-template-columns: repeat(12, minmax(0, 1fr));
     }
@@ -2159,6 +2169,18 @@
   @media (prefers-color-scheme: dark) {
     .dark\:bg-gray-950 {
       background-color: var(--color-gray-950);
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    .dark\:bg-gray-950\/40 {
+      background-color: #03071266;
+    }
+
+    @supports (color: color-mix(in lab, red, red)) {
+      .dark\:bg-gray-950\/40 {
+        background-color: color-mix(in oklab, var(--color-gray-950) 40%, transparent);
+      }
     }
   }
 

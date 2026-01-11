@@ -23,14 +23,14 @@ function Rafiki() {
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$1_$40$babel$2b$core$40$7$2e$2_39b5f7bf9254f45631682e0d132e5fc2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                             className: "text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight tracking-tight text-gray-100 dark:text-gray-950 mb-8",
                             children: [
-                                "Hi, I'm ",
+                                "Jambo, I'm ",
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$1_$40$babel$2b$core$40$7$2e$2_39b5f7bf9254f45631682e0d132e5fc2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                     className: "text-[#0066FF]",
                                     children: "Rafiki"
                                 }, void 0, false, {
                                     fileName: "[project]/app/components/landing/Rafiki.tsx",
                                     lineNumber: 13,
-                                    columnNumber: 38
+                                    columnNumber: 41
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f2e$pnpm$2f$next$40$16$2e$1$2e$1_$40$babel$2b$core$40$7$2e$2_39b5f7bf9254f45631682e0d132e5fc2$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                     fileName: "[project]/app/components/landing/Rafiki.tsx",
@@ -73,6 +73,7 @@ function Rafiki() {
                             options: {
                                 strings: [
                                     'Understand NSE stocks and bonds.',
+                                    'Guide you through the fundamentals.',
                                     'Track and analyze your portfolio.',
                                     'Diversify investment and risk.',
                                     'Invest smarter, not harder.'
