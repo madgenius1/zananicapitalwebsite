@@ -18,14 +18,14 @@ export default function Hero() {
                 </Link>
 
                 {/* Headline */}
-                <h1 className="text-5xl md:text-7xl lg:text-7xl font-bold tracking-tight text-gray-900 dark:text-white mb-8 leading-[1.1]">
-                    Invest in Kenyan Stocks. <br className="hidden md:block" />
-                    From Anywhere.
+                <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight text-gray-900 dark:text-white mb-8 leading-[1.1]">
+                    Invest in Kenyan Stocks <br className=" md:block" />
+                    From Anywhere
                 </h1>
 
                 {/* Sub-headline */}
                 <p className="max-w-2xl text-lg md:text-xl text-gray-800 dark:text-gray-200 leading-relaxed mb-10">
-                    Buy and Sell NSE stocks, buy Treasury Bonds, and invest in ETFs directly from your phone.
+                    Buy and Sell NSE stocks, buy Treasury Bonds, and invest in ETFs directly with the <strong>Zanari Capital Mobile App</strong>.
                 </p>
 
                 {/* Call to Action Button */}

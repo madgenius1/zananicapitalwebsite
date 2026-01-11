@@ -13,7 +13,7 @@ export default function SellingPoints() {
       title: "Inclusivity",
       tagline: "Investing isn't just for the few anymore.",
       description:
-        "With fractional shares and zero account minimums, we’ve democratized the financial markets. With us, you have a seat at the table.",
+        "With fractional shares and zero account minimums, we’ve democratized the Kenyan financial market. With us, you have a seat at the table.",
       accent: "text-emerald-600 dark:text-emerald-400",
       bg: "bg-emerald-50 dark:bg-gray-950",
     },
@@ -21,7 +21,7 @@ export default function SellingPoints() {
       title: "Intelligence",
       tagline: "Knowledge is your greatest asset.",
       description:
-        "Our AI-driven insights and curated educational tools cut through the market noise, giving you the clarity and confidence to make informed decisions for your future.",
+        "Our AI-driven insights and curated educational tools cut through the market noise, giving you the clarity and confidence to make informed decisions on purchasing stocks in the NSE.",
       accent: "text-violet-600 dark:text-violet-400",
       bg: "bg-violet-50 dark:bg-gray-950",
     },
@@ -29,7 +29,7 @@ export default function SellingPoints() {
       title: "Security",
       tagline: "Your peace of mind is non-negotiable.",
       description:
-        "We employ bank-grade encryption and multi-factor authentication to ensure your data and assets are protected by the most advanced safety protocols available today.",
+        "We employ bank-grade encryption, security, and multi-factor authentication to ensure your data and assets are protected by the most advanced safety protocols available today.",
       accent: "text-amber-600 dark:text-amber-400",
       bg: "bg-amber-50 dark:bg-gray-950",
     },
@@ -53,9 +53,9 @@ export default function SellingPoints() {
 
                 {/* Left */}
                 <div className="space-y-4">
-                  <div className="absolute top-2 left-2 text-sm tracking-widest text-gray-400 dark:text-gray-500">
+                  {/* <div className="absolute top-2 left-2 text-sm tracking-widest text-gray-400 dark:text-gray-500">
                     0{index + 1}
-                  </div>
+                  </div> */}
 
                   <span
                     className={`block h-2 w-18 rounded-full bg-current ${point.accent}`}
