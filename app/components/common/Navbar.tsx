@@ -11,7 +11,7 @@ export default function Navbar() {
 
     return (
         // Added 'sticky' and 'relative'
-        <nav className="top-0 z-50 w-full relative  dark:bg-gray-950 bg-white">
+        <nav className="top-0 sticky z-50 w-full  dark:bg-gray-950 bg-white">
             <div className="mx-auto flex max-w-7xl items-center justify-between p-4 lg:px-8" aria-label="Global">
 
                 {/* Logo Section */}

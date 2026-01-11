@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 export default function Hero() {
     return (
-        <section className="bg-white dark:bg-gray-950 min-h-screen flex items-center justify-center px-6 py-8 lg:p-8 transition-colors duration-300">
+        <section className="bg-gray-50 dark:bg-gray-900 min-h-screen flex items-center justify-center px-6 py-8 lg:p-8 transition-colors duration-300">
             <div className="max-w-4xl mx-auto text-center flex flex-col items-center">
 
                 {/* Small Top Badge */}
@@ -18,16 +18,14 @@ export default function Hero() {
                 </Link>
 
                 {/* Headline */}
-                <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tight text-gray-900 dark:text-white mb-8 leading-[1.1]">
-                    Invest in Kenya. <br className="hidden md:block" />
+                <h1 className="text-5xl md:text-7xl lg:text-7xl font-bold tracking-tight text-gray-900 dark:text-white mb-8 leading-[1.1]">
+                    Invest in Kenyan Stocks. <br className="hidden md:block" />
                     From Anywhere.
                 </h1>
 
                 {/* Sub-headline */}
                 <p className="max-w-2xl text-lg md:text-xl text-gray-800 dark:text-gray-200 leading-relaxed mb-10">
-                    Join the premier digital wealth platform for Kenyans and global investors.
-                    Access the NSE, Government Bonds, and ETFs with a secure,
-                    all-in-one mobile experience.
+                    Buy and Sell NSE stocks, buy Treasury Bonds, and invest in ETFs directly from your phone.
                 </p>
 
                 {/* Call to Action Button */}

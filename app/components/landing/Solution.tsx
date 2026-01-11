@@ -1,40 +1,40 @@
-import { HiGlobeAlt } from "react-icons/hi";
+import { HiCash } from "react-icons/hi";
 import { HiBolt, HiKey, HiShieldCheck } from "react-icons/hi2";
 
 const FEATURES = [
     {
         title: "Faster CDS & CDSC Processing",
         description:
-            "Open your digital trading accounts faster through our fully integrated onboarding flow.",
+            "Open digital trading accounts faster through our fully integrated onboarding flow.",
         icon: HiBolt,
-        accent: "text-blue-600 bg-blue-50 dark:bg-blue-950/40",
+        accent: "text-blue-600 bg-blue-100 dark:bg-blue-950/60",
     },
     {
-        title: "Diaspora Ready",
+        title: "All Inclusive",
         description:
-            "Invest from anywhere. International funding, local investments.",
-        icon: HiGlobeAlt,
-        accent: "text-gray-600 bg-gray-100 dark:bg-gray-950/40",
+            "Deposit and withdraw funds globally, trade stocks, and build wealth.",
+        icon: HiCash,
+        accent: "text-gray-600 bg-gray-50 dark:bg-gray-900/60",
     },
     {
         title: "Direct Asset Ownership",
         description:
-            "No middlemen or proxies. Assets are registered in your name — we simply provide the secure gateway.",
+            "Assets are registered in your name and in your full control.",
         icon: HiKey,
-        accent: "text-emerald-600 bg-emerald-50 dark:bg-emerald-950/40",
+        accent: "text-emerald-600 bg-emerald-50 dark:bg-emerald-950/60",
     },
     {
         title: "Bank-Grade Security",
         description:
             "End-to-end encryption and full compliance with Kenyan financial regulations and custodial standards.",
         icon: HiShieldCheck,
-        accent: "text-purple-600 bg-purple-50 dark:bg-purple-950/40",
+        accent: "text-purple-600 bg-purple-100 dark:bg-purple-950/60",
     },
 ];
 
 export default function Solution() {
     return (
-        <section className="py-16 lg:py-24 px-4 bg-white dark:bg-gray-950">
+        <section className="py-16 lg:py-24 px-4 bg-gray-50 dark:bg-gray-900">
             <div className="max-w-7xl mx-auto px-2">
                 {/* Header */}
                 <div className="max-w-4xl space-y-2 mb-12">
@@ -51,7 +51,7 @@ export default function Solution() {
                     {FEATURES.map((feature, idx) => (
                         <div
                             key={idx}
-                            className="group relative rounded-3xl border border-gray-200/60 dark:border-white/10 bg-gray-50 dark:bg-gray-900 p-8 shadow-sm hover:shadow-xl transition-all duration-500"
+                            className="group relative rounded-3xl border border-gray-200/60 dark:border-white/10 bg-gray-100 dark:bg-gray-950 p-8 shadow-sm hover:shadow-xl transition-all duration-500"
                         >
                             {/* Icon */}
                             <div

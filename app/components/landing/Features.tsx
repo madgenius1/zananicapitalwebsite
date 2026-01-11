@@ -45,11 +45,11 @@ const PRODUCTS: Product[] = [
     {
         id: "etfs",
         category: "Smart Investing",
-        title: "ETF Portfolios",
-        description: "Globally diversified portfolios auto-balanced for you.",
+        title: "ETFs",
+        description: "Globally diversified ETFs auto-balanced for you.",
         metric: "From KES 5,000",
         image: "/etfs.webp",
-        cta: "Build Portfolio",
+        cta: "Diversify Investments",
         gridClasses: "col-span-1 md:col-span-1 lg:col-span-4 lg:row-span-1",
         accent: "group-hover:bg-purple-600/20",
         icon: HiMiniArrowTrendingUp,
@@ -91,8 +91,8 @@ export default function InvestmentBento() {
                             One App <br /> <span className="text-gray-600"> Every Kenyan Asset. </span>
                         </h2>
                         <p className="mt-4 text-gray-800 dark:text-gray-400 text-lg md:text-xl">
-                            Invest in the Nairobi Securities Exchange, Government Bonds, and intelligent ETFs
-                            through a world-class platform.
+                            Buy and sell shares in the Nairobi Securities Exchange, Government Bonds, and intelligent ETFs
+                            through a world-class mobile app.
                         </p>
                     </div>
                 </div>
